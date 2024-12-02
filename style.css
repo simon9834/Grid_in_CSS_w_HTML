@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+a{
+    color: beige;
+    text-decoration: none;
+}
+p{
+    margin-bottom: 1.25em;
+}
+.main-content{
+    margin: 2em auto;
+}
+.card{
+    border: 1px solid blue;
+    padding: 1.5em 1em;
+    border-radius: 0.25em;
+}
+.card h1{
+    font-family: 'Bree Serif', Serif;
+    color:rgb(34, 123, 196);
+
+}
+.btn{
+    font-size: 0.85em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+    padding: 0.75em 1.5em;
+    border-radius: 0.35em;
+    display: block;
+}
+.material-icons{
+    color: rgb(247, 168, 51);
+    font-size: 4em;
+}
+/*grid*/
+.main-content{
+    width: 95%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    grid-gap: 20px;
+}
+/* display: grid;... říká rohlížeči, aby automaticky vyplnil prostor auto-generovani tolik sloupců, kolik se vejde, bez overflow,
+každý sloupec není užší jak 280px, jinak expanduje do 1 frakce(dílu) volného prostoru
+*/
